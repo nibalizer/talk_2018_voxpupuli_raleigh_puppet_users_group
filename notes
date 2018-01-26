@@ -1,0 +1,51 @@
+
+how did voxpup get started
+** changes in open source
+where is it now?
+what software is in voxpup?
+  * modules
+  * tools
+  * lint-plugins
+what humans are in voxpup?
+  * bastelfreak
+  * new pmc
+what are voxpup's communication channels?
+  * github issues
+  * irc channel
+     #voxpupuli
+     #voxpupuli-pmc
+  * puppet slack channel
+  * mailing list
+  * blog
+What's special about voxpupuli
+  * raid array of humans
+  * distribution of ownership
+  * central, consistent tooling
+  * modulesync
+  * no-touch releases - enables anyone to push releases
+  * gpg encrypted file w/ passwords
+  ** holds a different line per repo - this is a travis thing
+  * security officer - roidalupe
+
+What's my contribution
+  * early contributor to stuff
+  * governance doc
+  * ran election in 2018
+  * served on pmc
+
+PuppetBoard
+* nedap
+* daenny changed jobs, nedap donated it
+* community
+
+Puppet-nginx
+* jfryman
+* ran it for years, finally said, you know what lets put someone else on this
+* community
+
+Live demo: release collectd
+ * show commits since release
+ * do a modulesync
+ * create a release pr
+ * get it merged
+ * release w/ rake
