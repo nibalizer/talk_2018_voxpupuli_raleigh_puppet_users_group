@@ -1,0 +1,60 @@
+# These are the rough commands/notes I used for the demo
+# No Warranty, this will set your computer on fire
+
+do the GEM_HOME dance
+
+gem install modulesync
+
+clone modulesync_config
+(show commits since release)
+
+set PATH
+
+
+```
+GEMS  modulesync_config
+$: export PATH=`pwd`/GEMS/bin:${PATH}
+$: which modulesync
+$: ls GEMS/
+bin  build_info  cache  doc  extensions  gems  specifications
+$: ls GEMS/bin/
+facter  msync   restclient  rmsgfmt   rmsgmerge  thor
+hiera   puppet  rmsgcat     rmsginit  rxgettext
+$: ls GEMS/bin/msync 
+GEMS/bin/msync
+$: which msync 
+/home/nibz/projects/talk_2018_voxpupuli_raleigh_puppet_users_group/demo_beta/GEMS/bin/msync
+```
+
+
+ msync update --noop --filter='.*collectd*'
+*shows diff*
+
+git commit -a -m "modulesync 1.6.1"
+
+git push, pull request
+
+### release time
+
+gem install bundler
+
+bundle install --path .vendor/ --without system_tests development; bundle update; bundle clean
+
+gem install semantic_puppet
+
+
+vim metadata.json ( bump version) [read git to find version]
+8.0.1 (drop rc)
+
+export CHANGELOG_GITHUB_TOKEN=$(cat ~/.config/hub | grep token | cut -d " " -f 4)
+
+run `rake changelog`
+
+
+git commit -a -m "release 8.0.1"
+git co -b release_801
+do pull request
+
+get it merged
+
+bundle exec rake travis_release
