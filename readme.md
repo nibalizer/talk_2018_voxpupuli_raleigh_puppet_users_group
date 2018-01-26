@@ -9,4 +9,6 @@ Location: Raleigh Puppet Users Group
 Link: https://www.meetup.com/Raleigh-Puppet-User-Group/events/246758910/
 
 
-
+References:
+VoxPupuli release process: https://voxpupuli.org/docs/
+Puppet collectd module: https://github.com/nibalizer/puppet-collectd
